@@ -7,7 +7,7 @@ st.title("API Gravity Calculator")
 with st.form("Calculate_form"):
     value = st.text_input("Enter your Value Here:", "0")
     operations = st.selectbox(
-        "Choose Operation", ["SPecific Gravity to API", "API to Specific Gravity"])
+        "Choose Operation", ["Specific Gravity to API", "API to Specific Gravity"])
 
     submitted = st.form_submit_button("Calculate")
 
@@ -16,7 +16,7 @@ with st.form("Calculate_form"):
         try:
             num_value = float(value)
 
-            if operations == "SPecific Gravity to API":
+            if operations == "Specific Gravity to API":
                 if num_value <= 0:
                     st.error("Error: Specific Gravity Must be Greater than Zero")
                 else:
